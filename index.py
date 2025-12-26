@@ -1,7 +1,3 @@
-n = 0
-while True:
-    n+=1
-    print(n)
-    if(n==10):
-        break
-print(n)
+n = int(input("enter number : "))
+for i in range(1,11):
+    print(n*i,end=" ")
