@@ -1,9 +1,12 @@
-username  = input("enter user name : ")
-password = input("enter password : ")
+year = int(input("enter year : "))
 
-if(username == "admin" and password == "1234"):
-    print("logged in")
-elif(username!="admin"):
-    print("wrong username")
+if(year%100 == 0):
+    if(year%400 == 0):
+        print("leap year")
+    else:
+        print("not a leap year")
 else:
-    print("wrong password")
+    if(year%4==0):
+        print("leap year")
+    else:
+        print("not a leap year")
